@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Rumus Fisika Lengkap & Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Kalkulator Fisika SMA</h1>
+            <p>Lengkap, Sederhana, dan Mudah Digunakan</p>
+        </header>
+
+        <section class="topic-section">
+            <h2>Gerak Lurus</h2>
+            <div class="formula-group">
+                <h3>Kecepatan Rata-rata</h3>
+                <p class="formula-display">v = s / t</p>
+                <div class="calculators-grid">
+                    <div class="calculator">
+                        <h4>Hitung Kecepatan (v)</h4>
+                        <p class="formula-calc">v = s / t</p>
+                        <div class="input-row"><label for="v-s">Jarak (s) [meter]:</label><input type="number" id="v-s" step="any"></div>
+                        <div class="input-row"><label for="v-t">Waktu (t) [detik]:</label><input type="number" id="v-t" step="any"></div>
+                        <button id="calc-v">Hitung</button>
+                        <p class="result">Hasil: <span id="res-v"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Jarak (s)</h4>
+                        <p class="formula-calc">s = v × t</p>
+                        <div class="input-row"><label for="s-v">Kecepatan (v) [m/s]:</label><input type="number" id="s-v" step="any"></div>
+                        <div class="input-row"><label for="s-t">Waktu (t) [detik]:</label><input type="number" id="s-t" step="any"></div>
+                        <button id="calc-s">Hitung</button>
+                        <p class="result">Hasil: <span id="res-s"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Waktu (t)</h4>
+                        <p class="formula-calc">t = s / v</p>
+                        <div class="input-row"><label for="t-s">Jarak (s) [meter]:</label><input type="number" id="t-s" step="any"></div>
+                        <div class="input-row"><label for="t-v">Kecepatan (v) [m/s]:</label><input type="number" id="t-v" step="any"></div>
+                        <button id="calc-t">Hitung</button>
+                        <p class="result">Hasil: <span id="res-t"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="formula-group">
+                <h3>Jarak pada GLBB</h3>
+                <p class="formula-display">s = v₀t + ½at²</p>
+                <div class="calculators-grid">
+                    <div class="calculator">
+                        <h4>Hitung Jarak (s)</h4>
+                        <p class="formula-calc">s = v₀t + ½at²</p>
+                        <div class="input-row"><label for="glbb-s-v0">Kecep. Awal (v₀) [m/s]:</label><input type="number" id="glbb-s-v0" step="any"></div>
+                        <div class="input-row"><label for="glbb-s-t">Waktu (t) [detik]:</label><input type="number" id="glbb-s-t" step="any"></div>
+                        <div class="input-row"><label for="glbb-s-a">Percepatan (a) [m/s²]:</label><input type="number" id="glbb-s-a" step="any"></div>
+                        <button id="calc-glbb-s">Hitung</button>
+                        <p class="result">Hasil: <span id="res-glbb-s"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>Dinamika & Energi</h2>
+            <div class="formula-group">
+                <h3>Hukum II Newton</h3>
+                <p class="formula-display">F = m × a</p>
+                <div class="calculators-grid">
+                    <div class="calculator">
+                        <h4>Hitung Gaya (F)</h4>
+                        <p class="formula-calc">F = m × a</p>
+                        <div class="input-row"><label for="F-m">Massa (m) [kg]:</label><input type="number" id="F-m" step="any"></div>
+                        <div class="input-row"><label for="F-a">Percepatan (a) [m/s²]:</label><input type="number" id="F-a" step="any"></div>
+                        <button id="calc-F">Hitung</button>
+                        <p class="result">Hasil: <span id="res-F"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Massa (m)</h4>
+                        <p class="formula-calc">m = F / a</p>
+                        <div class="input-row"><label for="m-F">Gaya (F) [Newton]:</label><input type="number" id="m-F" step="any"></div>
+                        <div class="input-row"><label for="m-a">Percepatan (a) [m/s²]:</label><input type="number" id="m-a" step="any"></div>
+                        <button id="calc-m-newton">Hitung</button>
+                        <p class="result">Hasil: <span id="res-m-newton"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Percepatan (a)</h4>
+                        <p class="formula-calc">a = F / m</p>
+                        <div class="input-row"><label for="a-F">Gaya (F) [Newton]:</label><input type="number" id="a-F" step="any"></div>
+                        <div class="input-row"><label for="a-m">Massa (m) [kg]:</label><input type="number" id="a-m" step="any"></div>
+                        <button id="calc-a-newton">Hitung</button>
+                        <p class="result">Hasil: <span id="res-a-newton"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="formula-group">
+                <h3>Energi Potensial</h3>
+                <p class="formula-display">Ep = m × g × h</p>
+                <div class="calculators-grid">
+                    <div class="calculator">
+                        <h4>Hitung Energi Potensial (Ep)</h4>
+                        <p class="formula-calc">Ep = m × g × h</p>
+                        <div class="input-row"><label for="Ep-m">Massa (m) [kg]:</label><input type="number" id="Ep-m" step="any"></div>
+                        <div class="input-row"><label for="Ep-g">Gravitasi (g) [m/s²]:</label><input type="number" id="Ep-g" step="any" value="9.8"></div>
+                        <div class="input-row"><label for="Ep-h">Ketinggian (h) [meter]:</label><input type="number" id="Ep-h" step="any"></div>
+                        <button id="calc-Ep">Hitung</button>
+                        <p class="result">Hasil: <span id="res-Ep"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Massa (m)</h4>
+                        <p class="formula-calc">m = Ep / (g × h)</p>
+                        <div class="input-row"><label for="m-Ep">Energi Potensial (Ep) [Joule]:</label><input type="number" id="m-Ep" step="any"></div>
+                        <div class="input-row"><label for="m-g-potensial">Gravitasi (g) [m/s²]:</label><input type="number" id="m-g-potensial" step="any" value="9.8"></div>
+                        <div class="input-row"><label for="m-h-potensial">Ketinggian (h) [meter]:</label><input type="number" id="m-h-potensial" step="any"></div>
+                        <button id="calc-m-potensial">Hitung</button>
+                        <p class="result">Hasil: <span id="res-m-potensial"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Ketinggian (h)</h4>
+                        <p class="formula-calc">h = Ep / (m × g)</p>
+                        <div class="input-row"><label for="h-Ep">Energi Potensial (Ep) [Joule]:</label><input type="number" id="h-Ep" step="any"></div>
+                        <div class="input-row"><label for="h-m-potensial">Massa (m) [kg]:</label><input type="number" id="h-m-potensial" step="any"></div>
+                        <div class="input-row"><label for="h-g-potensial">Gravitasi (g) [m/s²]:</label><input type="number" id="h-g-potensial" step="any" value="9.8"></div>
+                        <button id="calc-h">Hitung</button>
+                        <p class="result">Hasil: <span id="res-h"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="formula-group">
+                <h3>Energi Kinetik</h3>
+                <p class="formula-display">Ek = ½ × m × v²</p>
+                <div class="calculators-grid">
+                    <div class="calculator">
+                        <h4>Hitung Energi Kinetik (Ek)</h4>
+                        <p class="formula-calc">Ek = 0.5 × m × v²</p>
+                        <div class="input-row"><label for="Ek-m">Massa (m) [kg]:</label><input type="number" id="Ek-m" step="any"></div>
+                        <div class="input-row"><label for="Ek-v">Kecepatan (v) [m/s]:</label><input type="number" id="Ek-v" step="any"></div>
+                        <button id="calc-Ek">Hitung</button>
+                        <p class="result">Hasil: <span id="res-Ek"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Massa (m)</h4>
+                        <p class="formula-calc">m = 2Ek / v²</p>
+                        <div class="input-row"><label for="m-Ek-kinetik">Energi Kinetik (Ek) [Joule]:</label><input type="number" id="m-Ek-kinetik" step="any"></div>
+                        <div class="input-row"><label for="m-v-kinetik">Kecepatan (v) [m/s]:</label><input type="number" id="m-v-kinetik" step="any"></div>
+                        <button id="calc-m-kinetik">Hitung</button>
+                        <p class="result">Hasil: <span id="res-m-kinetik"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Kecepatan (v)</h4>
+                        <p class="formula-calc">v = √(2Ek / m)</p>
+                        <div class="input-row"><label for="v-Ek">Energi Kinetik (Ek) [Joule]:</label><input type="number" id="v-Ek" step="any"></div>
+                        <div class="input-row"><label for="v-m-kinetik">Massa (m) [kg]:</label><input type="number" id="v-m-kinetik" step="any"></div>
+                        <button id="calc-v-kinetik">Hitung</button>
+                        <p class="result">Hasil: <span id="res-v-kinetik"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="formula-group">
+                <h3>Daya</h3>
+                <p class="formula-display">P = W / t</p>
+                <div class="calculators-grid">
+                    <div class="calculator">
+                        <h4>Hitung Daya (P)</h4>
+                        <p class="formula-calc">P = W / t</p>
+                        <div class="input-row"><label for="P-W">Usaha/Energi (W) [Joule]:</label><input type="number" id="P-W" step="any"></div>
+                        <div class="input-row"><label for="P-t">Waktu (t) [detik]:</label><input type="number" id="P-t" step="any"></div>
+                        <button id="calc-P">Hitung</button>
+                        <p class="result">Hasil: <span id="res-P"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Usaha/Energi (W)</h4>
+                        <p class="formula-calc">W = P × t</p>
+                        <div class="input-row"><label for="W-P">Daya (P) [Watt]:</label><input type="number" id="W-P" step="any"></div>
+                        <div class="input-row"><label for="W-t">Waktu (t) [detik]:</label><input type="number" id="W-t" step="any"></div>
+                        <button id="calc-W">Hitung</button>
+                        <p class="result">Hasil: <span id="res-W"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Waktu (t)</h4>
+                        <p class="formula-calc">t = W / P</p>
+                        <div class="input-row"><label for="t-W-daya">Usaha/Energi (W) [Joule]:</label><input type="number" id="t-W-daya" step="any"></div>
+                        <div class="input-row"><label for="t-P-daya">Daya (P) [Watt]:</label><input type="number" id="t-P-daya" step="any"></div>
+                        <button id="calc-t-daya">Hitung</button>
+                        <p class="result">Hasil: <span id="res-t-daya"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="topic-section">
+            <h2>Listrik Dinamis</h2>
+            <div class="formula-group">
+                <h3>Hukum Ohm</h3>
+                <p class="formula-display">V = I × R</p>
+                <div class="calculators-grid">
+                     <div class="calculator">
+                        <h4>Hitung Tegangan (V)</h4>
+                        <p class="formula-calc">V = I × R</p>
+                        <div class="input-row"><label for="V-I">Arus (I) [Ampere]:</label><input type="number" id="V-I" step="any"></div>
+                        <div class="input-row"><label for="V-R">Hambatan (R) [Ohm]:</label><input type="number" id="V-R" step="any"></div>
+                        <button id="calc-V">Hitung</button>
+                        <p class="result">Hasil: <span id="res-V"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Arus (I)</h4>
+                        <p class="formula-calc">I = V / R</p>
+                        <div class="input-row"><label for="I-V">Tegangan (V) [Volt]:</label><input type="number" id="I-V" step="any"></div>
+                        <div class="input-row"><label for="I-R">Hambatan (R) [Ohm]:</label><input type="number" id="I-R" step="any"></div>
+                        <button id="calc-I">Hitung</button>
+                        <p class="result">Hasil: <span id="res-I"></span></p>
+                    </div>
+                    <div class="calculator">
+                        <h4>Hitung Hambatan (R)</h4>
+                        <p class="formula-calc">R = V / I</p>
+                        <div class="input-row"><label for="R-V">Tegangan (V) [Volt]:</label><input type="number" id="R-V" step="any"></div>
+                        <div class="input-row"><label for="R-I">Arus (I) [Ampere]:</label><input type="number" id="R-I" step="any"></div>
+                        <button id="calc-R">Hitung</button>
+                        <p class="result">Hasil: <span id="res-R"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Dibuat untuk memudahkan siswa SMA. Selamat belajar!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
